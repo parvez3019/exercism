@@ -1,11 +1,8 @@
 public class HelloWorld {
   public static String hello(String name) {
-    if (name == "Alice") {
-      return "Hello, Alice!";
+    if ((name == null) || (name == "")) {
+      return "Hello, World!";
     }
-    if (name == "Bob"){
-      return "Hello, Bob!";
-    }
-    return "Hello, World!";
+    return "Hello, " + name + "!";
   }
 }
